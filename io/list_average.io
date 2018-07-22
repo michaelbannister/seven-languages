@@ -3,5 +3,5 @@ List myAverage := method(
 )
 
 Assert equal(3, list(1,5,3) myAverage)
-Assert throwsException(list() myAverage)
-Assert throwsException(list(1, "a") myAverage)
+Assert raisesException(list() myAverage)
+Assert raisesException(list(1, "a") myAverage)

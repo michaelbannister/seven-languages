@@ -6,10 +6,10 @@ if ((expected) == (actual),
   "Fail: expected #{call message argAt(1)} to equal [#{expected}] but was [#{actual}]" interpolate println)
 )
 
-Assert throwsException := method(
+Assert raisesException := method(
   e := try(call evalArgAt(0))
   if (e isNil,
-    "Fail: expected exception to be thrown by: #{call message argAt(0)}" interpolate println,
+    "Fail: expected exception to be raised by: #{call message argAt(0)}" interpolate println,
     "Pass: exception thrown: #{e error}" interpolate println
   )
 )

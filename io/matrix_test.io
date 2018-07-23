@@ -8,3 +8,11 @@ Assert raisesException(m get(2,0))
 m_t := m transpose
 m_t print
 Assert equal(99, m_t get(4,1))
+
+
+m2 := Matrix fromFile("input_matrix.txt")
+Assert equal(0, m2 get(1,1))
+Assert equal(7, m2 get(4,1))
+Assert equal(9, m2 get(3,3))
+
+m2 transpose toFile("output_matrix.txt")

@@ -16,6 +16,7 @@ Matrix dim := method(x, y,
   )
   m
 )
+
 Matrix print := method(
   for(y, 0, rows size - 1,
     row := rows at(y)
@@ -42,4 +43,28 @@ Matrix transpose := method(
     )
   )
   t
+)
+
+Matrix fromFile := method(path,
+  f := File with(path) openForReading
+  rows := list()
+
+  f foreachLine(line,
+    row := line split
+    row = row map(asNumber)
+    rows append(row)
+  )
+  f close
+  m := Matrix dim(rows at(0) size, rows size)
+  m rows := rows
+  m
+)
+
+Matrix toFile := method(path,
+  f := File with(path) remove openForUpdating
+  rows foreach(row,
+    f write(row join(" "))
+    f write("\n")
+  )
+  f close
 )

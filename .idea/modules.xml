@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ruby/ruby.iml" filepath="$PROJECT_DIR$/ruby/ruby.iml" />
+      <module fileurl="file://$PROJECT_DIR$/io/io.iml" filepath="$PROJECT_DIR$/io/io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scala/scala.iml" filepath="$PROJECT_DIR$/scala/scala.iml" />
       <module fileurl="file://$PROJECT_DIR$/seven-languages.iml" filepath="$PROJECT_DIR$/seven-languages.iml" />
     </modules>
   </component>

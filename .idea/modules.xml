@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/clojure/clojure.iml" filepath="$PROJECT_DIR$/clojure/clojure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clojure-koans/clojure-koans.iml" filepath="$PROJECT_DIR$/clojure-koans/clojure-koans.iml" />
       <module fileurl="file://$PROJECT_DIR$/io/io.iml" filepath="$PROJECT_DIR$/io/io.iml" />
       <module fileurl="file://$PROJECT_DIR$/scala/scala.iml" filepath="$PROJECT_DIR$/scala/scala.iml" />
     </modules>
